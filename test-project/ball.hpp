@@ -14,12 +14,15 @@
 
 class Ball: public Sphere {
     std::string color;
-    bool isBouncing;
+    bool isBouncing = false;
     
 public:
     Ball(double rad, std::string clr);
     
     void get_info();
+    
+    void start_bouncing();
+    void stop_bouncing();
     
 };
 

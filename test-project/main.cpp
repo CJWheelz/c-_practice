@@ -30,10 +30,20 @@ int main(int argc, const char * argv[]) {
     sphere2.get_info();
     
     print_divider();
+    
+    
+    // BALL
     std::cout << "BALL:\n";
     
     Ball ball(3, "Red");
     ball.get_info();
+    
+    print_divider();
+    
+    ball.start_bouncing();
+    ball.get_info();
+    
+    print_divider();
     
     return 0;
 }
