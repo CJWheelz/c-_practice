@@ -14,9 +14,61 @@ Node::Node(int value) {
 }
 
 void Node::printNode() {
-    std::cout << value << "\n";
+    std::cout << value;
 }
 
-void Node::add(Node* node) {
+void Node::append(Node* node) {
+    if (next != NULL) {
+        next->previous = node;
+        node->next = next;
+    }
+    
+    node->previous = this;
     next = node;
+}
+
+void Node::insert(Node *node) {
+    if (previous != NULL) {
+        previous->next = node;
+        node->previous = previous;
+    }
+    
+    
+    node->next = this;
+    
+    previous = node;
+}
+
+
+Node* Node::getNext() {
+    return next;
+}
+
+void Node::printList() {
+    Node* temp = this;
+    printNode();
+    std::cout << " <-> ";
+    
+    // print forwards
+    while (temp->next != NULL) {
+        temp = temp->next;
+        
+        temp->printNode();
+        std::cout << " <-> ";
+        
+    }
+    std::cout << "NULL || NULL";
+    
+    while (temp != NULL) {
+        std::cout << " <-> ";
+        temp->printNode();
+
+
+        temp = temp->previous;
+    }
+    
+    std::cout << "\n";
+    
+    
+   
 }

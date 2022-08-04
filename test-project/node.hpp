@@ -18,7 +18,12 @@ class Node {
 public:
     Node(int value);
     void printNode();
-    void add(Node* node);
+    void append(Node* node);
+    void insert(Node* node);
+    
+    Node* getNext();
+    
+    void printList();
 };
 
 #endif /* node_hpp */

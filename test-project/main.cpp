@@ -14,7 +14,24 @@
 
 int main() {
     Node node(6);
-    node.printNode();
+    Node newNode(7);
+    
+    node.append(&newNode);
+    
+    node.printList();
+        
+    Node another(8);
+    node.append(&another);
+    
+    node.printList();
+    
+    Node n(9);
+    
+    another.insert(&n);
+    
+    
+    node.printList();
+    
 }
 
 //void print_divider() {
