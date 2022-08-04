@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7FA3FD6B289B1AF100F285DB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3FD6A289B1AF100F285DB /* main.cpp */; };
+		7FA3FD73289B214200F285DB /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3FD71289B214200F285DB /* sphere.cpp */; };
+		7FB922E0289C091000D3C0A4 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FB922DE289C091000D3C0A4 /* ball.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		7FA3FD67289B1AF100F285DB /* test-project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "test-project"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA3FD6A289B1AF100F285DB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7FA3FD71289B214200F285DB /* sphere.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sphere.cpp; sourceTree = "<group>"; };
+		7FA3FD72289B214200F285DB /* sphere.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sphere.hpp; sourceTree = "<group>"; };
+		7FB922DE289C091000D3C0A4 /* ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
+		7FB922DF289C091000D3C0A4 /* ball.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ball.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				7FA3FD6A289B1AF100F285DB /* main.cpp */,
+				7FA3FD71289B214200F285DB /* sphere.cpp */,
+				7FA3FD72289B214200F285DB /* sphere.hpp */,
+				7FB922DE289C091000D3C0A4 /* ball.cpp */,
+				7FB922DF289C091000D3C0A4 /* ball.hpp */,
 			);
 			path = "test-project";
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA3FD73289B214200F285DB /* sphere.cpp in Sources */,
 				7FA3FD6B289B1AF100F285DB /* main.cpp in Sources */,
+				7FB922E0289C091000D3C0A4 /* ball.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
