@@ -9,41 +9,48 @@
 
 #include "sphere.hpp"
 #include "ball.hpp"
+#include "node.hpp"
 
-void print_divider() {
-    std::cout << "--------------------------\n";
+
+int main() {
+    Node node(6);
+    node.printNode();
 }
 
-int main(int argc, const char * argv[]) {
-    
-    Sphere sphere(2);
-    sphere.get_info();
-    
-    print_divider();
-    
-    sphere.set_radius(3);
-    sphere.get_info();
-    
-    print_divider();
-    
-    Sphere sphere2;
-    sphere2.get_info();
-    
-    print_divider();
-    
-    
-    // BALL
-    std::cout << "BALL:\n";
-    
-    Ball ball(3, "Red");
-    ball.get_info();
-    
-    print_divider();
-    
-    ball.start_bouncing();
-    ball.get_info();
-    
-    print_divider();
-    
-    return 0;
-}
+//void print_divider() {
+//    std::cout << "--------------------------\n";
+//}
+//
+//int main(int argc, const char * argv[]) {
+//
+//    Sphere sphere(2);
+//    sphere.get_info();
+//
+//    print_divider();
+//
+//    sphere.set_radius(3);
+//    sphere.get_info();
+//
+//    print_divider();
+//
+//    Sphere sphere2;
+//    sphere2.get_info();
+//
+//    print_divider();
+//
+//
+//    // BALL
+//    std::cout << "BALL:\n";
+//
+//    Ball ball(3, "Red");
+//    ball.get_info();
+//
+//    print_divider();
+//
+//    ball.start_bouncing();
+//    ball.get_info();
+//
+//    print_divider();
+//
+//    return 0;
+//}
