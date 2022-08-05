@@ -20,6 +20,7 @@ public:
     void printNode();
     void append(Node* node);
     void insert(Node* node);
+    void putLast(Node* node);
     
     Node* getNext();
     

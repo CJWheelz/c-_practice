@@ -39,6 +39,17 @@ void Node::insert(Node *node) {
     previous = node;
 }
 
+void Node::putLast(Node* node) {
+    Node* temp = this;
+    
+    while (temp->next != NULL) {
+        temp = temp->next;
+    }
+    
+    temp->next = node;
+    node->previous = temp;
+}
+
 
 Node* Node::getNext() {
     return next;
@@ -70,5 +81,4 @@ void Node::printList() {
     std::cout << "\n";
     
     
-   
 }

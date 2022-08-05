@@ -7,30 +7,68 @@
 
 #include <iostream>
 
-#include "sphere.hpp"
-#include "ball.hpp"
-#include "node.hpp"
+//#include "sphere.hpp"
+//#include "ball.hpp"
+//#include "node.hpp"
+#include "linkedlist.hpp"
 
 
 int main() {
-    Node node(6);
-    Node newNode(7);
+    LinkedList list;
     
-    node.append(&newNode);
+//    list.printListDetail();
+
+    list.addBack(1);
+    list.addBack(2);
+    list.addFront(0);
+    list.addBack(3);
+    list.addFront(-1);
     
-    node.printList();
-        
-    Node another(8);
-    node.append(&another);
+    list.printListDetail();
+//    list.printList();
     
-    node.printList();
+//    list.popFront();
+//    list.popFront();
+//    list.popFront();
+//    list.popFront();
+//    list.popFront();
     
-    Node n(9);
+    list.popBack();
+    list.popBack();
+    list.popBack();
+    list.popBack();
+    list.popBack();
     
-    another.insert(&n);
-    
-    
-    node.printList();
+    std::cout << "Size: " << list.getSize() << "\n";
+//
+//    while (list.getSize() != 0) {
+//        std::cout << "Popped: " << list.popFront() << "\n";
+//        list.printList();
+//        std::cout << "Size: " << list.getSize() << "\n";
+//    }
+//
+//    list.addBack(9);
+//    list.addFront(8);
+//    list.addFront(7);
+//    list.addBack(10);
+//    list.printList();
+//    std::cout << "Size: " << list.getSize() << "\n";
+//
+//    list.popBack();
+//    list.printList();
+//    list.popFront();
+//    list.printList();
+//    list.popBack();
+//    list.printList();
+//    list.popFront();
+//    list.printList();
+//    list.popBack();
+//    list.printList();
+//
+//    list.clearList();
+//    std::cout << "Size: " << list.getSize() << "\n";
+//
+//    list.printList();
     
 }
 
